@@ -353,3 +353,11 @@ nav a.active::after {
 nav a.active:hover {
   color: var(--accent-teal);
 }
+
+@media (max-width: 600px) {
+  .my-container {
+    padding: 10px;
+    font-size: 1rem;
+    /* ...other styles for small screens */
+  }
+}
