@@ -5,7 +5,7 @@ function MaterialsPage() {
         <div className="materials-grid">
           <div className="material-card">
             <h3>IGCSE ICT - Syllabus</h3>
-            <a href="/0417-2026-2028-syllabus.pdf" target="_blank">View PDF</a>
+            <a href="/697139-2026-2028-syllabus.pdf" target="_blank">View PDF</a>
           </div>
           <div className="material-card">
             <h3>AS Level CS Worksheets</h3>

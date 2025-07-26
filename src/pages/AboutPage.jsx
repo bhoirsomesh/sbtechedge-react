@@ -3,7 +3,7 @@ function AboutPage() {
     <main className="about-content">
       <div className="about-section">
         <img
-          src="/undraw_team_work_k-80-m.svg"
+          src="public/logo.png"
           alt="About SBTechEdge"
         />
         <div className="about-text">
