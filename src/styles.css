@@ -372,77 +372,68 @@ nav a.active:hover {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  /* Navbar layout */
-  .navbar-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  /* Hero section */
+  /* Fix hero section */
   .hero-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px 15px;
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 30px 15px !important;
   }
 
   .hero-text h1 {
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
   }
 
   .hero-text p {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .hero-image {
-    width: 90%;
-    max-width: 320px;
+    width: 90% !important;
+    max-width: 320px !important;
+    margin: auto !important;
   }
 
-  /* Grid layout fixes */
-  .materials-grid,
-  .features-grid,
-  .courses-grid,
-  .testimonial-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 0 10px;
+  /* Fix study materials */
+  .materials-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding: 0 15px !important;
   }
 
-  .material-card,
-  .feature-card,
-  .course-card,
-  .testimonial-card {
-    padding: 15px;
+  .material-card {
+    padding: 15px !important;
+    font-size: 0.95rem !important;
   }
 
-  /* Section padding */
+  /* Fix navbar layout */
+  .navbar-container {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 0 !important;
+  }
+
+  /* General layout */
+  section,
   .features,
   .courses,
-  .materials,
   .testimonials,
-  .contact-section,
-  .about-content {
-    padding: 30px 15px;
+  .contact-section {
+    padding: 30px 15px !important;
   }
 
-  /* CTA Button */
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-
-  /* Center all text */
   h1, h2, h3, p {
-    text-align: center;
+    text-align: center !important;
+  }
+
+  .cta-button {
+    padding: 10px 20px !important;
+    font-size: 16px !important;
   }
 }
 
