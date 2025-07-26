@@ -397,15 +397,25 @@ nav a.active:hover {
     display: none; /* temporary until we build mobile menu */
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-  /* HERO section mobile layout */
+  /* Fix grid stacking */
+  .materials-grid,
+  .features-grid,
+  .courses-grid,
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  /* Hero fixes */
   .hero-container {
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
     text-align: center;
     padding: 30px 15px;
-    gap: 30px;
   }
 
   .hero-text h1 {
@@ -417,43 +427,11 @@ nav a.active:hover {
   }
 
   .hero-image {
-    max-width: 280px;
+    max-width: 300px;
     width: 100%;
   }
 
-  /* CARD GRID LAYOUT (Study Materials, Courses, Features, Testimonials) */
-  .materials-grid,
-  .features-grid,
-  .courses-grid,
-  .testimonial-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 0 10px;
-  }
-
-  .material-card,
-  .feature-card,
-  .course-card,
-  .testimonial-card {
-    padding: 15px;
-    font-size: 15px;
-  }
-
-  /* Heading fix */
-  .features h2,
-  .testimonials h2 {
-    font-size: 1.8em;
-    margin-bottom: 30px;
-  }
-
-  /* Button (like CTA) */
-  .hero-text .cta-button,
-  .quick-link {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-
-  /* Section spacing */
+  /* Section padding */
   .features,
   .courses,
   .about-content,
@@ -463,28 +441,18 @@ nav a.active:hover {
     padding: 30px 15px;
   }
 
-  /* Contact form */
+  /* Contact form size */
   .contact-form input,
   .contact-form textarea {
-    padding: 10px;
-    font-size: 15px;
-  }
-
-  .contact-form button {
-    padding: 10px 20px;
     font-size: 16px;
+    padding: 12px;
   }
 
-  /* Past Papers Collapsibles */
-  .past-papers-section details {
-    padding: 10px;
-    font-size: 15px;
+  /* CTA button */
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 20px;
   }
-
-  .past-papers-section summary {
-    font-size: 17px;
-  }
-
 }
 
 
