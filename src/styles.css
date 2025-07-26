@@ -371,9 +371,8 @@ nav a.active:hover {
 .logo-link::after {
   display: none;
 }
-@media (max-width: 768px) {
-
-  /* Navbar adjustments */
+@media screen and (max-width: 768px) {
+  /* NAVBAR */
   .navbar-container {
     flex-direction: column;
     align-items: center;
@@ -381,33 +380,39 @@ nav a.active:hover {
 
   .nav-links {
     flex-direction: column;
-    gap: 12px;
-    display: flex !important; /* enable if you want mobile nav for now */
+    gap: 10px;
+    padding: 0;
+    display: flex;
   }
 
-  /* Hero section */
+  /* HERO */
   .hero-container {
     flex-direction: column !important;
-    text-align: center !important;
-    gap: 25px;
-    padding: 30px 15px !important;
-  }
-
-  .hero-text h1 {
-    font-size: 1.6rem !important;
-  }
-
-  .hero-text p {
-    font-size: 1rem !important;
+    padding: 20px !important;
+    text-align: center;
+    gap: 20px;
   }
 
   .hero-image {
-    width: 100% !important;
-    max-width: 320px;
+    max-width: 300px;
+    width: 90%;
     margin: auto;
   }
 
-  /* Grids */
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  /* GRIDS */
   .materials-grid,
   .features-grid,
   .courses-grid,
@@ -419,13 +424,14 @@ nav a.active:hover {
   }
 
   .material-card,
+  .feature-card,
   .course-card,
   .testimonial-card {
     padding: 15px;
     font-size: 0.95rem;
   }
 
-  /* Section layout */
+  /* SECTIONS */
   .features,
   .courses,
   .materials,
@@ -433,11 +439,6 @@ nav a.active:hover {
   .about-content,
   .contact-section {
     padding: 30px 15px;
-  }
-
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 16px;
   }
 
   h1, h2, h3, p {
