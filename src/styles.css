@@ -372,68 +372,32 @@ nav a.active:hover {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  /* Fix hero section */
   .hero-container {
-    flex-direction: column !important;
-    text-align: center !important;
-    padding: 30px 15px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
   }
 
   .hero-text h1 {
-    font-size: 1.6rem !important;
+    font-size: 1.6rem;
   }
 
   .hero-text p {
-    font-size: 1rem !important;
+    font-size: 1rem;
   }
 
   .hero-image {
-    width: 90% !important;
-    max-width: 320px !important;
-    margin: auto !important;
-  }
-
-  /* Fix study materials */
-  .materials-grid {
-    grid-template-columns: 1fr !important;
-    gap: 20px !important;
-    padding: 0 15px !important;
-  }
-
-  .material-card {
-    padding: 15px !important;
-    font-size: 0.95rem !important;
-  }
-
-  /* Fix navbar layout */
-  .navbar-container {
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-
-  .nav-links {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 10px !important;
-    padding: 0 !important;
-  }
-
-  /* General layout */
-  section,
-  .features,
-  .courses,
-  .testimonials,
-  .contact-section {
-    padding: 30px 15px !important;
-  }
-
-  h1, h2, h3, p {
-    text-align: center !important;
+    width: 90%;
+    max-width: 320px;
+    height: auto;
   }
 
   .cta-button {
-    padding: 10px 20px !important;
-    font-size: 16px !important;
+    font-size: 16px;
+    padding: 10px 20px;
   }
 }
 
