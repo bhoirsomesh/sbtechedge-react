@@ -397,53 +397,43 @@ nav a.active:hover {
     display: none; /* temporary until we build mobile menu */
   }
 }
-@media screen and (max-width: 768px) {
-  /* Fix grid sections */
-  .materials-grid,
-  .features-grid,
-  .courses-grid,
-  .testimonial-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 20px !important;
-    padding: 0 10px !important;
+/* Mobile Devices (Up to 768px width) */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* Hero Section */
-  .hero-container {
-    flex-direction: column !important;
-    padding: 20px 15px !important;
-    text-align: center !important;
-    gap: 20px !important;
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .hero-image {
-    width: 90% !important;
-    max-width: 300px !important;
-    margin: auto !important;
+  .hero-container,
+  .about-content,
+  .materials-grid {
+    flex-direction: column;
+    padding: 10px;
   }
 
-  .hero-text h1 {
-    font-size: 1.5rem !important;
+  .material-card {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
-  .hero-text p {
-    font-size: 1rem !important;
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
-  /* Section padding */
-  .features,
-  .courses,
-  .materials,
-  .testimonials,
-  .contact-section {
-    padding: 30px 15px !important;
+  h1, h2, h3, p {
+    text-align: center;
+    font-size: 90%;
   }
 
-  /* CTA button */
   .cta-button {
-    font-size: 1rem !important;
-    padding: 10px 20px !important;
+    padding: 10px 20px;
+    font-size: 16px;
   }
 }
 
