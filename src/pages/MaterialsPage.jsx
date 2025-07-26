@@ -9,13 +9,18 @@ function MaterialsPage() {
           </div>
           <div className="material-card">
             <h3>AS Level CS Worksheets</h3>
-            <a href="/materials/as_cs_worksheets.pdf" target="_blank">View PDF</a>
+            <a href="/as_cs_worksheets.pdf" target="_blank">View PDF</a>
           </div>
           <div className="material-card">
-            <h3>Python Assignments</h3>
-            <a href="/materials/python_assignments.pdf" target="_blank">View PDF</a>
+            <h3>Computer Science Textbook</h3>
+            <a href="/IGCSE Computer Science Second Edition.pdf" target="_blank">View PDF</a>
+          </div>
+          <div className="material-card">
+            <h3>ICT Textbook</h3>
+            <a href="/ICT 3rd Edition Textbook.pdf" target="_blank">View PDF</a>
           </div>
         </div>
+        
       </main>
     );
   }

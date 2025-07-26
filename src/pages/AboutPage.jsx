@@ -7,7 +7,7 @@ function AboutPage() {
           alt="About SBTechEdge"
         />
         <div className="about-text">
-          <h2>About SBTechEdge</h2>
+          <h1>About SBTechEdge</h1>
           <p>
             At SBTechEdge, we believe that technology education should be
             practical, engaging, and future-focused. With years of teaching

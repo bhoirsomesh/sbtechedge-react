@@ -8,9 +8,15 @@ function HeroSection() {
               Empowering learners with practical skills and exam confidence
               for IGCSE, AS & A Levels, and programming.
             </p>
-            <a href="/contact" className="cta-button">
+            <a
+              href="https://forms.gle/p5pNJcFV2Ftkh3Su9"
+              className="cta-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Book a Free Trial Class
             </a>
+
           </div>
           <img
             src="/undraw_programming_65t2.png"

@@ -1,11 +1,17 @@
 import { NavLink } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="logo">
+        
+
+        <Link to="/" className="logo-link">
           <img src="/logo.png" alt="SBTechEdge Logo" />
+        </Link>
+
+          {/* <img src="/logo.png" alt="SBTechEdge Logo" /> */}
         </div>
         <ul className="nav-links">
           <li><NavLink to="/" end className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink></li>

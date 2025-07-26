@@ -76,7 +76,7 @@ nav a {
   position: relative;
 }
 
-nav a::after {
+.nav-links a::after {
   content: "";
   position: absolute;
   width: 0%;
@@ -87,9 +87,10 @@ nav a::after {
   transition: width 0.3s;
 }
 
-nav a:hover::after {
+.nav-links a:hover::after {
   width: 100%;
 }
+
 
 nav a.active {
   color: var(--accent-teal);
@@ -361,3 +362,39 @@ nav a.active:hover {
     /* ...other styles for small screens */
   }
 }
+.logo-link {
+  text-decoration: none !important;
+  border: none !important;
+  outline: none;
+  position: relative;
+}
+.logo-link::after {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .materials-grid,
+  .features-grid,
+  .courses-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .nav-links {
+    display: none; /* temporary until we build mobile menu */
+  }
+}
+
