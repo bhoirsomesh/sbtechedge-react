@@ -398,60 +398,52 @@ nav a.active:hover {
   }
 }
 @media screen and (max-width: 768px) {
-
-  /* Fix grid stacking */
+  /* Fix grid sections */
   .materials-grid,
   .features-grid,
   .courses-grid,
   .testimonial-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 0 15px;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding: 0 10px !important;
   }
 
-  /* Hero fixes */
+  /* Hero Section */
   .hero-container {
     flex-direction: column !important;
-    align-items: center;
-    text-align: center;
-    padding: 30px 15px;
-  }
-
-  .hero-text h1 {
-    font-size: 1.8em;
-  }
-
-  .hero-text p {
-    font-size: 1em;
+    padding: 20px 15px !important;
+    text-align: center !important;
+    gap: 20px !important;
   }
 
   .hero-image {
-    max-width: 300px;
-    width: 100%;
+    width: 90% !important;
+    max-width: 300px !important;
+    margin: auto !important;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .hero-text p {
+    font-size: 1rem !important;
   }
 
   /* Section padding */
   .features,
   .courses,
-  .about-content,
   .materials,
   .testimonials,
   .contact-section {
-    padding: 30px 15px;
-  }
-
-  /* Contact form size */
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 16px;
-    padding: 12px;
+    padding: 30px 15px !important;
   }
 
   /* CTA button */
   .cta-button {
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 1rem !important;
+    padding: 10px 20px !important;
   }
 }
 
